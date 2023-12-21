@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dodaj Urzad</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-8">
+                <form action="" method="POST">
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Miasto</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Miasto"
+                               name="miasto">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Miejsce zalatwiania</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Urzad"
+                               name="miejscowosc">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput3">Pelny Adres</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Adres"
+                               name="adres">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput4">Numer Telefonu</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput4" placeholder="Telefon"
+                               name="telefon">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput5">Numer Faksu</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput5" placeholder="Faks"
+                               name="faks">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput6">Strona Internetowa</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput6" placeholder="www"
+                               name="strona">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput7">Stroina BIP</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput7" placeholder="BIP"
+                               name="bip">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput8">Adres Email</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput8" placeholder="email"
+                               name="email">
+                    </div>
+                    <div class="form-group">
+                        <br>
+                        Godziny Pracy
+                        <br>
+                        <br>
+                        <label for="formGroupExampleInput9">Poniedzialek</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput9" placeholder="czas"
+                               name="pon">
+                        <div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput10">Wtorek</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput10" placeholder="09:00 - 17:00"
+                                   name="wt">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput11">Sroda</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput11" placeholder="09:00 - 17:00"
+                                   name="sr">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput12">Czwartek</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput12" placeholder="09:00 - 17:00"
+                                   name="cz">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput13">Piatek</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput13" placeholder="09:00 - 17:00"
+                                   name="pt">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-primary">Wyslij</button>
+                    <br>
+                    <a href="{{ url_for('home') }}">Strona Glowna</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
